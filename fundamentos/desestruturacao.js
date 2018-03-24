@@ -1,4 +1,4 @@
-// novo recurso do ES2015
+// Novo recurso do ES2015
 const pessoa = { 
     nome: "Felipe",
     idade: 23, 
@@ -9,7 +9,7 @@ const pessoa = {
     }
 };
 
-// desestruturação de objeto
+// Desestruturação de objeto
 const {nome, idade} = pessoa;
 
 // Criando variáveis com o rótulo personalizado
