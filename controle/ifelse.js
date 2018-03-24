@@ -1,7 +1,13 @@
+// O else if é a mesma coisa que um if aninhado 
+// ao else só que menos confuso e bugado na hora
+// de ler. Porém, sempre depende do algoritmo...
+
 Number.prototype.entre = function (inicio, fim) {
     return this >= inicio && this <= fim;
 }
 
+// A função imprimirResultado faz um review 
+// sobre a situação da nota do aluno
 const imprimirResultado = function (nota) {
     if(nota.entre(9, 10)){
         console.log("Quadro de Honra!");
