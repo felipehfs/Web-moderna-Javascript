@@ -1,4 +1,4 @@
-// algoritmos de ordenação
+// Algoritmos de ordenação Quick sort - Complexidade de algoritmo O(n log n)
 function quicksort(array){
     try {
         if(array.length < 2){

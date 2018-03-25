@@ -17,7 +17,7 @@ const imprimirResultado = function (nota) {
     }else if(nota.entre(0, 3.99)){
         console.log("Reprovação");
     } else {
-        console.log("Não aprovado");
+        console.log("Valor inválido");
     }
 }
 
