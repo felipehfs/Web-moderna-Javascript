@@ -1,6 +1,6 @@
 function Pessoa(){
     this.idade = 0
-    // Outra estrategia para amarrar o contexto
+    // Outra estratégia para amarrar o contexto do this em uma constante
     const self = this
     setInterval(function(){
         self.idade++
