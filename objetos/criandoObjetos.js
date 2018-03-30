@@ -18,7 +18,9 @@ const p1 = new Produto("Caneta", 2.89, 0.01);
 const p2 = new Produto("Notebook",2900.00, 0.06);
 console.log(p1.getPrecoComDesconto(), p2.getPrecoComDesconto());
 
-
+/*
+    Função cria o objeto salário responsável pelo cálculo de horas trabalhadas.
+*/
 function criarFuncionario(nome, salarioBase, faltas){
     return {
         nome, 
