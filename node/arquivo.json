@@ -1,0 +1,12 @@
+{
+    "funcionarios":[
+        {
+            "nome": "Jose",
+            "salario": 2000.00
+        },
+        {
+            "nome": "Maria",
+            "salario": 2000.00
+        }
+    ]
+}
