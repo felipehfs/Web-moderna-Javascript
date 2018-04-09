@@ -12,6 +12,8 @@ pilotos.unshift('Hamilton');
 console.log(pilotos);
 
 // Splice remove e adiciona elemento em um índice
+// Dependendo do segundo parâmetro se for zero
+// é uma adicao caso contrário é uma remoção
 pilotos.splice(2, 0, 'Bottas', 'Massa')
 console.log(pilotos);
 

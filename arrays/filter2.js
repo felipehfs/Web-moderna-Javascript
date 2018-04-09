@@ -1,3 +1,4 @@
+// Implementação do filter para fins de teste
 const produtos = [
     { nome: "Borracha", preco: 2.89, fragil: false},
     { nome: "Caderno", preco: 20.99, fragil: false},

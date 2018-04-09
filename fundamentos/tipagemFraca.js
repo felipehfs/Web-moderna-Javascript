@@ -15,4 +15,4 @@
  // Evitar nome genérico
  let valor = '';
  let numero = 1;
- let pqp = false; // Produto químico pergigoso ... kkk
+ let pqp = false; // Produto químico perigoso ... kkk

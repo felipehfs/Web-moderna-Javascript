@@ -1,3 +1,5 @@
+// A função filter do Array retorna um novo array sem modificar 
+// o conteúdo do array iterado
 const produtos = [
     { nome: "Borracha", preco: 2.89, fragil: false},
     { nome: "Caderno", preco: 20.99, fragil: false},

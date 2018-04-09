@@ -1,4 +1,4 @@
-
+// Implementação do forEach presente na api padrão do Javascript
 aprovados = ['Agatha', 'Marcela', "Danizudo", "Julio"]
 
 Array.prototype.forEach2 = function(funcao){

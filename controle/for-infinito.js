@@ -1,3 +1,4 @@
+// for quase infinito
 let i = 0;
 for(;;){
     try{
