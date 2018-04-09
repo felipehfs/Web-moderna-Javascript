@@ -11,7 +11,7 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 
 ## Capítulos
 ---
-- [ ]  Capítulo 1 - Introdução<br>
+- [x]  Capítulo 1 - Introdução<br>
 - [x]  Capítulo 2 - Configurando ambiente <br>
 - [x]  [Capítulo 3 - Fundamentos](fundamentos/)<br>
 - [x]  [Capítulo 4 - Estrutura de controle](controle/)<br>
