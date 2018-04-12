@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercícios</title>
+    <style>
+        #conteudo {
+            width: 800px;
+            margin: 0 auto;
+        }
+        #conteudo h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Exercícios - Utilizando Ajax
+    </header>
+    <nav>
+        <a href="#" wb-nav="exercicios/teste.html">Teste 0-1</a> |
+        <a href="#" wb-nav="exercicios/outrapagina.html">Golang</a> |
+        <a href="#" wb-nav="exercicios/texto.html">Texto</a> |
+        <a href="#" wb-nav="exercicios/texto2.html">Texto 2</a> |
+        <a href="#" wb-nav="exercicios/lista1.html">Lista 1</a> |
+        <a href="#" wb-nav="exercicios/links1.html">Links 1</a>
+    </nav>
+    <section id="conteudo">
+
+    </section>
+    <script>
+        let links = document.querySelectorAll('[wb-nav]');
+        let conteudo = document.getElementById('conteudo');
+
+        links.forEach(link => {
+
+            link.onclick = function (e) {
+                e.preventDefault();
+                fetch(link.getAttribute('wb-nav'))
+                .then(resp => resp.text())
+                .then(page => conteudo.innerHTML = page);
+            }
+        });
+    </script>
+</body>
+</html>

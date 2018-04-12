@@ -14,10 +14,12 @@ function retornaPagina(url){
 }
 const extractTitle = (page) =>  /<title>(.*)<\/title>/g.exec(page)[1]
 
-/* Promise.all([retornaPagina('http://www.google.com.br'), retornaPagina('http://www.bing.com') ])
+/* 
+    Promise.all([retornaPagina('http://www.google.com.br'), retornaPagina('http://www.bing.com') ])
     .then(urls => urls.map(extractTitle))
     .then(titles => titles.forEach(title => console.log(title)))
-    .catch(e => console.log(e)) */
+    .catch(e => console.log(e)) 
+*/
 
 const tituloBuscadores = async () => {
     const google = await retornaPagina("http://www.google.com.br/")

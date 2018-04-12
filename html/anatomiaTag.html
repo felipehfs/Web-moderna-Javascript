@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Anatomia do HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        .main {
+            margin: 0 auto;
+            width: 800px;
+            font-size: 20px;
+            letter-spacing: 4px;
+            font-family: Arial, sans-serif;
+        }
+        p{
+            text-align: justify;
+        }
+        .main h1 {
+            color:steelblue;
+        }
+        .main h1, h2{
+            text-align: center;
+        }
+        code {
+            background-color: white;
+            padding: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho -->
+    </header>
+    <main class="main">
+        <!-- O HTML é case insensitive -->
+        <h1>Introdução sobre HTML5</h1>
+        <ul>
+            <li>O HTML é case insensitive.</li>
+            <li>Possui possibilidade de criar suas próprias tags pelo framework.</li>
+            <li>Existem tags que não precisam ser fechadas, apenas em alguns frameworks Javascript.</li>
+            <li>Quando você escreve um HTML mais semântico isso ajuda na indexação deste conteúdo.</li>
+            <li>Informações sobre a páginas para os crawlers, metadados e importações de css geralmente fica no head da página.</li>
+        </ul>
+        <p>Dentro de um HTML é possível integrar com CSS e Javascript, mas não é recomendado. O correto é utilizar uma folha de estilo e um script JS em um arquivo externo.</p>
+    </main>
+    <section class="main">
+        <h1>Introdução sobre o CSS</h1>
+        <p>
+            O CSS é responsável pela estilização na página utilizando customizando as tags pelos seletores e propriedades.
+            Exemplo: <br>
+            <code>
+                p {
+                    color: white;
+                }
+            </code>
+        </p>
+    </section>
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+</body>
+</html>
