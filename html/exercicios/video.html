@@ -1,0 +1,48 @@
+<video id="meuVideo" width="800" height="450" controlsList="nodownload" >
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="media/mp4">
+    O vídeo não foi suportado pelo navegador.
+</video>
+
+<div wm-progresso="meuVideo" class="progresso">
+    <div></div>
+</div>
+
+<div>
+    <button wm-play="meuVideo">Play</button>
+    <button wm-stop="meuVideo">Pause</button>
+</div>
+<style>
+    .progresso {
+        width: 800px;
+
+    }
+    .progresso div {
+        background-color:#ff0000;
+        width: 0;
+        height: 10px;
+    }
+</style>
+
+<script>
+    // progressoDeVideo aumenta a div a medida que o vídeo é executado
+    function progressoDeVideo() {
+            let progress = this.currentTime / this.duration;
+            progress = Math.floor((progress * 100));
+            let div = document.querySelector("[wm-progresso] div");
+            div.style.width = isNaN(progress)? `0%`: `${progress}%`;
+            div.style.background = progress === 100? "green": "#ff0000";
+    }
+
+    // configurarVideo configura os botões e a barra de progresso
+    function configurarVideo(id, url){
+        let playButton = document.querySelector(`[wm-play=${id}]`);
+        let stopButton = document.querySelector(`[wm-stop=${id}]`);
+        let video = document.getElementById(id);
+        video.src = url
+        video.oncontextmenu = () => false 
+        video.ontimeupdate = progressoDeVideo
+        playButton.onclick = () =>  video.play() 
+        stopButton.onclick = () =>  video.pause() 
+    }
+    configurarVideo("meuVideo", "http://files.cod3r.com.br/curso-web/video.mp4")
+</script>
