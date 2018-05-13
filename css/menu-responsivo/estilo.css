@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    overflow: hidden;
+}
+
+.logo {
+    margin-left: 80px;
+    margin-right: 45px;
+    float: left;
+}
+
+.logo h1 { 
+    color: white;
+}
+
+.menu {
+    display: block;
+    list-style-type: none;
+}
+.menu li {
+    display: inline-block;
+    line-height: 3em;
+}
+.menu li a{
+    text-decoration: none;
+    padding: 50px;
+    font-family: Arial;
+    line-height: 3em;
+}
+.menu li a:hover {
+    background: tomato;
+    color: white;
+}
+.brand {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        margin-top: 3px;
+        margin-left: 15px;
+    }
+    .menu li a {
+        padding: 17px 150px;
+    }
+    .brand{
+        display: block;
+        float: right;
+        line-height: 3em;
+        margin-right: 13px;
+        text-decoration: none;
+        color: white;
+    }
+    .menu {
+        position: absolute;
+        z-index: 2;
+        top: 50px;
+        width: 100%;
+        display: none;
+    }
+    .menu li {
+        display: block;
+        text-align: center;
+    }
+    .menu li a {
+        line-height: 1em;
+    }
+  
+}

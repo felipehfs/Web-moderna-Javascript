@@ -21,5 +21,5 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 - [x]  [Capítulo 8 - Node](node/)<br>
 - [x]  [Capítulo 9 - ESNext](esnext/)<br>
 - [x]  Capítulo 10 - Conceitos sobre a web<br>
-- [ ]  [Capítulo 11 - HTML](html/)<br>
-- [ ]  [Capítulo 12 - CSS](css/)<br>
+- [x]  [Capítulo 11 - HTML](html/)<br>
+- [x]  [Capítulo 12 - CSS](css/)<br>

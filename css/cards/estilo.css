@@ -1,0 +1,31 @@
+.card {
+    width: 180px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
+    float: left;
+    margin-right: 46px;
+    box-sizing: border-box;
+}
+
+.text-title {
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+}
+
+.text-content {
+    padding: 0 5px;
+    float: right;
+}
+
+.preco-de {
+    text-decoration: line-through;
+}
+.preco-para{
+    display: block;
+    color: orangered;
+    font-size: 2.8em;
+}
