@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form name="myForm" action="http://www.google.com/">
+        <label for="q">Search</label>
+        <input id="q" type="text" name="q">
+        <select name="hl" id="">
+            <option value="pt-br">Português (Brasileiro) </option>
+            <option value="en-us">English (Americano)</option>
+        </select>
+        <input type="submit" value="Pesquisar">
+    </form>
+    <script>
+        console.log(document.myForm)
+        document.myForm.q.placeholder = "Pesquise aqui"
+        console.log(document.forms[0].hl)
+    </script>
+</body>
+</html>

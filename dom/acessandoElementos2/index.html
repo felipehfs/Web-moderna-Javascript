@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acessando elemento</title>
+    <style>
+        body {
+            display: flex;
+            background-color: cornflowerblue;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box {
+            border: 5px solid white;
+            padding: 30px;
+            margin: 5px;
+            box-shadow: 1px 3px 4px rgba(0, 0, 0, .5);
+            background:red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            color: white;
+        }
+        .destaque {
+            background-color: rebeccapurple;
+        }
+        .borda-verde {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="primeiro" class="box">Elemento 1</div>
+    <div class="segundo box">Elemento 2</div>
+    <div class="ultimo box">Elemento 3</div>
+    <script>
+        document.querySelector("#primeiro").classList.add("destaque");
+        const selecionar = seletor => 
+            document.querySelectorAll(seletor)
+            .forEach( elem => elem.classList.add("destaque"));
+        
+        const deselecionar = seletor => 
+            document.querySelectorAll(seletor)
+            .forEach(elem => elem.classList.remove("destaque"));
+        
+        selecionar(".box");
+        deselecionar(":not(#primeiro)");
+    </script>
+</body>
+</html>
