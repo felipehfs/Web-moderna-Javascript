@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilizando Classes</title>
+    <style>
+        .destaque {
+            color: goldenrod;
+            border: 4px solid goldenrod;
+        }
+        div {
+            padding: 15px;
+            border-radius: 4px;
+            width: 120px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Classes
+    </div>
+    <script>
+        // Utilizando as classes 
+        const classes = document.querySelector("div");
+        classes.classList.add("destaque")
+        classes.classList.remove("destaque")
+
+        // O Toggle alterna a inclusão da classe css
+        classes.classList.toggle("destaque")
+        console.log(classes.classList.length)
+        console.log(classes.classList.contains("destaque"))
+        classes.classList.add("destaque2")
+
+        for (let item of classes.classList){
+            console.log(item)
+        }
+
+        classes.classList.forEach(elem => console.log(elem));
+    </script>
+</body>
+</html>

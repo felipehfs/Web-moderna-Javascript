@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trabalhando com eventos #001</title>
+</head>
+<body>
+    <div>
+        <!-- onclick="navegarEm5s(event)" -->
+        <a href="https://www.google.com.br" data-delay>Google</a>
+    </div>
+    <script>
+        function navegarEm5s(e){
+            e.preventDefault()
+            console.log("Saindo em 5s...");
+            setTimeout(() => {
+                const link = e.target
+                window.location.href = link.href
+            }, 5000)
+        }
+        const googleLink = document.querySelector("a[data-delay]");
+        googleLink.onclick = navegarEm5s
+    </script>
+</body>
+</html>

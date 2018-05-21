@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const body = document.querySelector("body");
+        const div1 = document.createElement("div")
+        div1.setAttribute("wm-atributo", "valor")
+        div1.innerHTML = "Segundo"
+        
+        body.appendChild(div1)
+        const div4 = div1.cloneNode(true);
+        body.insertBefore(div4, div1);
+    </script>
+</body>
+</html>

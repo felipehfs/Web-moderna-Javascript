@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cadetblue;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    width: 500px;
+    padding: 10px;
+}
+input, select {
+    margin: 5px 0;
+}

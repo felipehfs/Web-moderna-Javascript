@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Procure no Google.com</title>
+</head>
+<body>
+    <div>
+        <ul id="compras" destino="compras" data-urgencia="5">
+            <li>Café</li>
+            <li>Água</li>
+            <li>Copo Descartável</li>
+        </ul>
+    </div>
+    <script>
+        const lista = document.querySelector("#compras")
+
+        // Somente leitura
+        console.log(lista.attributes)
+        console.log(lista.attributes[0]);
+        
+        console.log(lista.attributes.destino);
+        console.log(lista.attributes['data-urgencia'])
+
+        lista.attributes.destino = "Casa";
+        console.log(lista.attributes.destino)
+    </script>
+</body>
+</html>

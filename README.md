@@ -23,3 +23,4 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 - [x]  Capítulo 10 - Conceitos sobre a web<br>
 - [x]  [Capítulo 11 - HTML](html/)<br>
 - [x]  [Capítulo 12 - CSS](css/)<br>
+- [x]  [Capítulo 13 - DOM](dom/)<br>  
