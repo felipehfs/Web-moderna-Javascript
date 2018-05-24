@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #01</title>
+    <link rel='stylesheet' href='css/estilo.css'>
+</head>
+
+<body class="conteudo exercicio">
+    <h1>Estados</h1>
+
+    <script>
+        function ajax(config){
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.metodo, config.url, true)
+
+            xhr.onload = e => {
+                if(xhr.status === 200) {
+                    config.sucesso(xhr.response)
+                } else if (xhr.status >= 400){
+                    config.erro({
+                        code: xhr.status,
+                        text: xhr.statusText
+                    })
+                }
+            }
+            xhr.send()
+        }
+
+        const criarColuna = (conteudo) => {
+            const td = document.createElement("td")
+            td.innerHTML = conteudo
+            return td
+        }
+
+        function criarTabela(estados){
+            const linhas = estados.map(estado => {
+                const tdId = criarColuna(estado.id)
+                const tdName = criarColuna(estado.nome)
+                const tdSigla = criarColuna(estado.sigla)
+
+                const tr = document.createElement("tr")
+                tr.appendChild(tdId)
+                tr.appendChild(tdName)
+                tr.appendChild(tdSigla)
+                return tr
+            })
+            return linhas
+        }
+
+        ajax({
+            url: "dados/estados.json",
+            metodo: "get",
+            sucesso(resposta){
+                const estados = JSON.parse(resposta)
+                const linhas = criarTabela(estados)
+                const tabela = document.createElement("table")
+                linhas.forEach(linha => tabela.appendChild(linha))
+
+                document.body.appendChild(tabela)
+            },
+            erro(erro){
+                document.body.append(document.createTextNode(`${erro.code}: ${erro.text}`))
+            }
+        })
+    </script>
+</body>
