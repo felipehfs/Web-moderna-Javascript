@@ -24,4 +24,9 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 - [x]  [Capítulo 11 - HTML](html/)<br>
 - [x]  [Capítulo 12 - CSS](css/)<br>
 - [x]  [Capítulo 13 - DOM](dom/)<br>  
-- [x]  [Capítulo 14 - Ajax](ajax/)<br>  
+- [x]  [Capítulo 14 - Ajax](ajax/)<br> 
+- [x]  [Capítulo 15 - Gulp](gulp/)<br>
+- [x]  [Capítulo 16 - Webpack](webpack/)<br>
+- [x]  [Capítulo 17 - Jquery](jquery/)<br>
+- [x]  [Capítulo 18 - Boostrap](bootstrap/)<br>
+- [ ]  [Capítulo 19 - React](react/) <br>
