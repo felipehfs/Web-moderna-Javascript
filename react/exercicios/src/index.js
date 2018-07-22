@@ -1,4 +1,7 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Pai from './componentes/pai'
 
-ReactDOM.render(<h1>Hello React!</h1>, document.getElementById('root'))
+ReactDOM.render(<React.Fragment>
+    <Pai nome="Francisco" sobrenome="Moreira" />
+</React.Fragment>, document.getElementById('root'));
