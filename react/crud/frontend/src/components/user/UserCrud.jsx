@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import Main from "../template/Main"
 import axios from 'axios'
 import UserForm from './UserForm'
+import UserList from './USerList'
 
 const headerProps = {
     icon: "users",
@@ -79,6 +80,7 @@ export default class UserCrud extends Component {
                     updateField={this.updateField.bind(this)}
                     clear={this.clear.bind(this)}
                     save={this.save.bind(this)} />
+                <UserList list={this.state.list}/>
             </Main>
         )
     }

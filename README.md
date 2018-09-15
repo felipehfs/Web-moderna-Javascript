@@ -29,4 +29,4 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 - [x]  [Capítulo 16 - Webpack](webpack/)<br>
 - [x]  [Capítulo 17 - Jquery](jquery/)<br>
 - [x]  [Capítulo 18 - Boostrap](bootstrap/)<br>
-- [ ]  [Capítulo 19 - React](react/) <br>
+- [x]  [Capítulo 19 - React](react/) <br>
