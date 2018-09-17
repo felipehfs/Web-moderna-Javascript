@@ -30,3 +30,4 @@ Nesse curso iremos abordar o desenvolvimento Web de ponta a ponta, para que voc�
 - [x]  [Capítulo 17 - Jquery](jquery/)<br>
 - [x]  [Capítulo 18 - Boostrap](bootstrap/)<br>
 - [x]  [Capítulo 19 - React](react/) <br>
+- [ ]  [Capítulo 20 - Vuejs](vue/) <br>
